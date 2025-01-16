@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on boarding</title>
+    <style>
+      body {
+        background-color: #797575;
+      }
+      .border {
+        border: 1px solid white;
+      }
+      .size {
+        margin-top: 40px;
+        height: 400px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .flex{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 8px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .round-btn{
+background-color: rgb(0, 110, 255);
+border-radius: 700px;
+color: white;
+max-width: 120px;
+min-width: 120px;
+max-height: 120px;
+min-height: 120px;
+/* padding-left: 2px;
+padding-right: 2px; */
+border:none;
+      }
+     .round-btn:hover{
+        background-color: rgb(0, 68, 255);
+cursor: pointer;
+     } 
+
+    </style>
+  </head>
+  <body>
+    <div class="border size">
+      <video width="100%" height="100%" controls>
+        <source src="http://localhost:8080/video" type="video/mp4" />
+        Error Message
+      </video>
+      <div class="flex">
+        <button type="button" class="round-btn">go to view status list</button>
+        <button type="button" class="round-btn">go to GPS view</button>
+        <button type="button" class="round-btn">stop video from HDMI and play video from usb</button
+        ><button type="button" class="round-btn">test change status GPIO in</button
+        ><button type="button" class="round-btn">test change status GPIO out</button>
+      </div>
+    </div>
+  </body>
+</html>
